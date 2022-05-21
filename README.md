@@ -6,3 +6,12 @@ This repository is Pytorch code for our proposed MMN method [1] for Cross-Modali
 
 The results may have some fluctuation, and might be better by finetuning the hyper-parameters.
 
+'''
+@inproceedings{zhang2021towards,
+  title={Towards a Unified Middle Modality Learning for Visible-Infrared Person Re-Identification},
+  author={Zhang, Yukang and Yan, Yan and Lu, Yang and Wang, Hanzi},
+  booktitle={Proceedings of the 29th ACM International Conference on Multimedia},
+  pages={788--796},
+  year={2021}
+}
+'''
