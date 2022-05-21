@@ -15,3 +15,15 @@ The results may have some fluctuation, and might be better by finetuning the hyp
   year={2021}
 }
 '''
+
+```
+@inProceedings{kanazawaHMR18,
+  title={End-to-end Recovery of Human Shape and Pose},
+  author = {Angjoo Kanazawa
+  and Michael J. Black
+  and David W. Jacobs
+  and Jitendra Malik},
+  booktitle={Computer Vision and Pattern Regognition (CVPR)},
+  year={2018}
+}
+```
