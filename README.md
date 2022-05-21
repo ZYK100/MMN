@@ -20,8 +20,8 @@ The results may have some fluctuation, and might be better by finetuning the hyp
 
 |Datasets    | Rank@1   | mAP     |
 | --------   | -----    |  -----  |
-|#RegDB      | ~ 91.6%  | ~ 84.1% |
-|#SYSU-MM01  | ~ 70.6%  | ~ 66.9% |
+|#RegDB[1]      | ~ 91.6%  | ~ 84.1% |
+|#SYSU-MM01[2]  | ~ 70.6%  | ~ 66.9% |
 
 
 ### Citation
@@ -36,6 +36,19 @@ Please kindly cite this paper in your publications if it helps your research:
   year={2021}
 }
 ```
-Our code is based on [mangye16](https://github.com/mangye16/Cross-Modal-Re-ID-baseline). 
 
-Contact: zhangyk@stu.xmu.edu.cn
+Our code is based on [mangye16](https://github.com/mangye16/Cross-Modal-Re-ID-baseline) [3, 4]. 
+
+###  5. References.
+
+
+[1] D. T. Nguyen, H. G. Hong, K. W. Kim, and K. R. Park. Person recognition system based on a combination of body images from visible light and thermal cameras. Sensors, 17(3):605, 2017.
+
+[2] A. Wu, W.-s. Zheng, H.-X. Yu, S. Gong, and J. Lai. Rgb-infrared crossmodality person re-identification. In IEEE International Conference on Computer Vision (ICCV), pages 5380–5389, 2017.
+
+[3] M. Ye, J. Shen, G. Lin, T. Xiang, L. Shao, and S. C., Hoi. 	Deep learning for person re-identification: A survey and outlook. IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI), 2020.
+
+[4] M. Ye, X. Lan, Z. Wang, and P. C. Yuen. Bi-directional Center-Constrained Top-Ranking for Visible Thermal Person Re-Identification. IEEE Transactions on Information Forensics and Security (TIFS), 2019.
+
+
+If you have any question, please feel free to contact us. zhangyk@stu.xmu.edu.cn.
