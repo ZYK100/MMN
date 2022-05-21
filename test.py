@@ -29,7 +29,7 @@ parser.add_argument('--workers', default=4, type=int, metavar='N', help='number 
 parser.add_argument('--img_w', default=192, type=int, metavar='imgw', help='img width')
 parser.add_argument('--img_h', default=384, type=int, metavar='imgh', help='img height')
 parser.add_argument('--batch-size', default=8, type=int, metavar='B', help='training batch size')
-parser.add_argument('--test-batch', default=2, type=int, metavar='tb', help='testing batch size')
+parser.add_argument('--test-batch', default=64, type=int, metavar='tb', help='testing batch size')
 parser.add_argument('--method', default='awg', type=str, metavar='m', help='method type: base or awg')
 parser.add_argument('--margin', default=0.3, type=float, metavar='margin', help='triplet loss margin')
 parser.add_argument('--num_pos', default=5, type=int, help='num of pos per identity in each modality')
