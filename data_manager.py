@@ -2,7 +2,6 @@ from __future__ import print_function, absolute_import
 import os
 import numpy as np
 import random
-from itertools import chain
 
 def process_query_sysu(data_path, mode = 'all', relabel=False):
     if mode== 'all':
@@ -35,35 +34,6 @@ def process_query_sysu(data_path, mode = 'all', relabel=False):
         query_cam.append(camid)
     return query_img, np.array(query_id), np.array(query_cam)
 
-def process_gallery_sysud(data_path, mode = 'all', trial = 0, relabel=False):
-    ir_cameras = ['cam1','cam2','cam4','cam5']
-    
-    file_path = os.path.join(data_path,'exp/test_id.txt')
-    files_rgb = []
-    files_ir = []
-
-    with open(file_path, 'r') as file:
-        ids = file.read().splitlines()
-        ids = [int(y) for y in ids[0].split(',')]
-        ids = ["%04d" % x for x in ids]
-
-    for id in sorted(ids):
-        for cam in ir_cameras:
-            img_dir = os.path.join(data_path,cam,id)
-            if os.path.isdir(img_dir):
-                new_files = sorted([img_dir+'/'+i for i in os.listdir(img_dir)])
-                files_ir.extend(new_files)
-    query_img = []
-    query_id = []
-    query_cam = []
-    print(files_ir)
-    for img_path in files_ir:
-        camid, pid = int(img_path[-15]), int(img_path[-13:-9])
-        query_img.append(img_path)
-        query_id.append(pid)
-        query_cam.append(camid)
-    return query_img, np.array(query_id), np.array(query_cam)
-
 def process_gallery_sysu(data_path, mode = 'all', trial = 0, relabel=False):
     
     random.seed(trial)
@@ -85,7 +55,6 @@ def process_gallery_sysu(data_path, mode = 'all', trial = 0, relabel=False):
             img_dir = os.path.join(data_path,cam,id)
             if os.path.isdir(img_dir):
                 new_files = sorted([img_dir+'/'+i for i in os.listdir(img_dir)])
-                #for i in range(4):
                 files_rgb.append(random.choice(new_files))
     gall_img = []
     gall_id = []
