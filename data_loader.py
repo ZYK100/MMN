@@ -47,7 +47,7 @@ class RegDBData(data.Dataset):
         for i in range(len(color_img_file)):
    
             img = Image.open(data_dir+ color_img_file[i])
-            img = img.resize((144, 288), Image.ANTIALIAS)
+            img = img.resize((192, 384), Image.ANTIALIAS)
             pix_array = np.array(img)
             train_color_image.append(pix_array)
         train_color_image = np.array(train_color_image) 
@@ -55,7 +55,7 @@ class RegDBData(data.Dataset):
         train_thermal_image = []
         for i in range(len(thermal_img_file)):
             img = Image.open(data_dir+ thermal_img_file[i])
-            img = img.resize((144, 288), Image.ANTIALIAS)
+            img = img.resize((192, 384), Image.ANTIALIAS)
             pix_array = np.array(img)
             train_thermal_image.append(pix_array)
         train_thermal_image = np.array(train_thermal_image)
@@ -86,7 +86,7 @@ class RegDBData(data.Dataset):
         return len(self.train_color_label)
         
 class TestData(data.Dataset):
-    def __init__(self, test_img_file, test_label, transform=None, img_size = (144,288)):
+    def __init__(self, test_img_file, test_label, transform=None, img_size = (192,384)):
 
         test_image = []
         for i in range(len(test_img_file)):
@@ -108,7 +108,7 @@ class TestData(data.Dataset):
         return len(self.test_image)
         
 class TestDataOld(data.Dataset):
-    def __init__(self, data_dir, test_img_file, test_label, transform=None, img_size = (144,288)):
+    def __init__(self, data_dir, test_img_file, test_label, transform=None, img_size = (192,384)):
 
         test_image = []
         for i in range(len(test_img_file)):
