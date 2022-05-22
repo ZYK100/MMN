@@ -39,7 +39,7 @@ Please kindly cite this paper in your publications if it helps your research:
 
 Our code is based on [mangye16](https://github.com/mangye16/Cross-Modal-Re-ID-baseline) [3, 4]. 
 
-###  5. References.
+###  References.
 
 
 [1] D. T. Nguyen, H. G. Hong, K. W. Kim, and K. R. Park. Person recognition system based on a combination of body images from visible light and thermal cameras. Sensors, 17(3):605, 2017.
